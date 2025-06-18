@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #25258e;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar .profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .profile-icon {
+  font-size: 50px;
+  background-color: white;
+  color: #25258e;
+  border-radius: 50%;
+  padding: 65px;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(35px);
+}
+
+.sidebar .email {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.sidebar .menu {
+  width: 100%;
+}
+
+.sidebar .menu button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  color: #25258e;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sidebar .menu button:hover {
+  background-color: #ccc;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.welcome {
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h1, .card h4, .card p {
+  margin-bottom: 10px;
+}
+
+.card button {
+  background-color: #25258e;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #1e1e6d;
+}
+
+.kalender table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 5px;
+  margin-top: 10px;
+}
+
+.kalender td, .kalender th {
+  padding: 6px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+}
+
+.kalender .active {
+  background-color: #25258e;
+  color: white;
+}
+
+.header-jadwal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item-jadwal {
+  background-color: #ccc;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 6px;
+}
